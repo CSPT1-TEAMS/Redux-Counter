@@ -11,8 +11,22 @@ export const DECREMENT = 'DECREMENT';
 
 export const increment = () => {
   // Fill in this function
+
+  return {
+    //returns payload + 1
+
+    type: INCREMENT
+
+  };
 };
 
 export const decrement = () => {
   // Fill in this function
+
+  return {
+    // returns payload - 1
+
+    type: DECREMENT
+
+  };
 };

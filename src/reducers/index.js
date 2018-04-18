@@ -1,4 +1,4 @@
-import { INCREMENT, DECREMENT } from '../actions';
+import { INCREMENT, DECREMENT, INCREMENT_IF_ODD } from '../actions';
 
 // Our reducer that handles our two action cases:
 // increment and decrement. It receives the state
@@ -12,6 +12,9 @@ export default (count = 0, action) => {
       
     case DECREMENT:
       return count -  action.payload
+
+    case INCREMENT_IF_ODD:
+      return (count %2 !== 0 ? count + action.payload : count)
       
     default:
       return count;

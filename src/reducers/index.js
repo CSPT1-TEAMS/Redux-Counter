@@ -14,7 +14,7 @@ export default (count = 0, action) => {
       return count -  action.payload
 
     case INCREMENT_IF_ODD:
-      return (count %2 !== 0 ? count + action.payload : count)
+      return (count %2 !== 0 ? (count + action.payload) : count)
       
     default:
       return count;

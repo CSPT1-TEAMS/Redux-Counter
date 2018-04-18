@@ -8,7 +8,7 @@ class Counter extends Component {
         // only increments if the counter value is odd
 
         // decrement if it is even. Extra stretch for me.
-        
+
         this.props.count % 2 !== 0 ? this.props.increment() : this.props.decrement()
     };
 
@@ -33,7 +33,7 @@ class Counter extends Component {
                  {/* Uncomment these button tags if you got
                 around to implementing the extra credit functions */}
                 <button onClick={this.incrementIfOdd}>
-                    Increment if odd
+                    Increment if odd, decrement if even
                 </button>
                 {/* <button onClick={this.incrementAsync}>
                     Increment async
